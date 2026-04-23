@@ -1,0 +1,9 @@
+{
+  "name": "aura-cinema-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "install": "cd frontend && npm install && cd ../backend && pip install -r requirements.txt"
+  }
+}
