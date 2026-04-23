@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
-const API_BASE = 'http://localhost:8000'
+const API_BASE = import.meta.env.MODE === 'production' ? '/api' : 'http://localhost:8000'
 
 const useStore = create((set, get) => ({
   // State
